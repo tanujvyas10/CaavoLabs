@@ -54,29 +54,15 @@ const Home = () => {
       let temp_list = list
       for(let i in list){
            if(list[i].id === element.id){
-       
-
-
-            // element.isSelected = false
-            // setList([...list,element])
-            // data[idx] = element;
-            // setData(prev=> data);
-
+      
 
 
             element.isSelected = false;
-//            console.log("temp list before",list)
-
             list.splice(i,1);
             setList([...list]);
 
-  //          console.log("temp list afer",list)
-  
             data[idx] = element;
             setData(prev=> data);
-
-           // console.log("data after remova;l",data)
-    //   // console.log("removing",data)
              break;
            }
       }

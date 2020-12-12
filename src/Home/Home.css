@@ -66,23 +66,23 @@
     align-items: center;
   }
 
-  .name_section, .description_section{
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:10px;
-    align-items: center;
-    padding:10px;
-    height:30px;
-    max-width: 60%;
-    border-radius: 999px;;
-    border:1px solid #ffffff;
-}
-
-input[type="text"]
+.name_section input[type="text"],.description_section input[type="text"]
 {
-    font-size:24px;
-    text-align: center;
+  border:0;
+  font-size: 24px;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2.5px solid rgb(255, 255, 255);
+  padding: 14px 10px;
+  width: 70%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+    
 }
 
 
