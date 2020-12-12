@@ -1,0 +1,154 @@
+.home_main{
+    color:rgb(243, 238, 238);
+    text-align: center;
+    margin: auto;
+}
+
+.home_group_creation
+{
+    display: flex;
+}
+ 
+  .container{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    
+  }
+
+  .photo_uploading{
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+    font-weight: bold;
+  
+  }
+  img{
+    border-radius: 16px;
+  }
+  .img-holder{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 20px;
+    margin-top: 1rem;
+    
+  }
+  .img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  #input[type="file"] {
+      display: none;
+  }
+  .label{
+    width: 100%;
+    margin-top: .2rem;
+  }
+  .image-upload{
+
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+  .group_text{
+    flex:0.7;
+    align-items: center;
+  }
+
+  .name_section, .description_section{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    align-items: center;
+    padding:10px;
+    height:30px;
+    max-width: 60%;
+    border-radius: 999px;;
+    border:1px solid #ffffff;
+}
+
+input[type="text"]
+{
+    font-size:24px;
+    text-align: center;
+}
+
+
+.name_section input, .description_section input {
+    background-color: rgb(22, 21, 21);
+    color:whitesmoke;
+    border:none;
+    width: 80%;
+    padding:10px;
+    outline-width: 0;
+    height: 20px;
+}
+
+
+
+.user_section{
+    flex:1;
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 768px) {
+   
+    .home_group_creation{
+     flex-direction: column;   
+    }
+    input[type="text"]
+{
+    font-size:15px;
+    text-align: center;
+}
+    
+  .group_text {
+    flex:1;
+  }
+  .photo_uploading{
+    flex:1;
+    margin-bottom: 50px;
+  }
+  }
+
+  .user_section{
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+
+@media screen and (max-width: 768px) {
+    .user_section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"]
+    {
+        font-size:15px;
+        text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .user_section {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    input[type="text"]
+    {
+        font-size:15px;
+        text-align: center;
+    }
+
+  }
+  
