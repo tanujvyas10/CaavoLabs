@@ -8,8 +8,7 @@
 {
     display: flex;
 }
- 
-  .container{
+  .photo_container{
     height: 150px;
     width: 150px;
     border-radius: 10px;
@@ -31,7 +30,7 @@
   img{
     border-radius: 16px;
   }
-  .img-holder{
+  .photo-holder{
     margin: auto;
     width: 150px;
     height: 150px;
@@ -97,39 +96,42 @@
 }
 
 
+.button_section {
+ display: flex;
+ align-items: center;
+ justify-content:center;
+}
+
 
 .user_section{
     flex:1;
-   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-@media screen and (max-width: 768px) {
-   
-    .home_group_creation{
-     flex-direction: column;   
-    }
-    input[type="text"]
-{
-    font-size:15px;
-    text-align: center;
-}
-    
-  .group_text {
-    flex:1;
-  }
-  .photo_uploading{
-    flex:1;
-    margin-bottom: 50px;
-  }
-  }
-
   .user_section{
       grid-template-columns: repeat(4, 1fr);
   }
 
 
 @media screen and (max-width: 768px) {
+
+  .home_group_creation{
+    flex-direction: column;   
+   }
+   input[type="text"]
+{
+   font-size:15px;
+   text-align: center;
+}
+   
+ .group_text {
+   flex:1;
+ }
+ .photo_uploading{
+   flex:1;
+   margin-bottom: 50px;
+ }
+  
     .user_section {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -141,6 +143,8 @@
   }
   
   @media screen and (max-width: 375px) {
+  
+ 
     .user_section {
       grid-template-columns: repeat(1, 1fr);
     }

@@ -39,13 +39,14 @@
 
 
   .user_select{
-    animation: animateChecks 0.5s;
+    animation: animateChecks 0.3s;
     top: 30px;
     right: 30px;
     position: absolute;
   }
 
-  
+
+
   @keyframes animateChecks {
     from {
         opacity:0;
