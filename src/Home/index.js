@@ -64,9 +64,7 @@ const saveGroup = function(){
      
       for(let i in list){
            if(list[i].id === element.id){
-      
-
-
+    
             element.isSelected = false;
             list.splice(i,1);
             setList([...list]);
@@ -77,6 +75,39 @@ const saveGroup = function(){
            }
       }
     }
+const sortType = function(e,currentdata){
+ if(e.target.value === "A-Z"){
+  currentdata.sort(function(a, b) {
+    let nameA = a.firstName.toUpperCase();
+    let nameB = b.firstName.toUpperCase();
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
+
+
+   setData([...currentdata])
+ }else{
+  currentdata.sort(function(a, b) {
+    let nameA = a.firstName.toUpperCase();
+    let nameB = b.firstName.toUpperCase();
+    if (nameA > nameB) {
+      return -1;
+    }
+    if (nameA < nameB) {
+      return 1;
+    }
+
+    return 0;
+  });
+   setData([...currentdata])
+}
+}
+
 
 const abort = function(){
   swal({
@@ -106,9 +137,7 @@ const abort = function(){
         }
         reader.readAsDataURL(e.target.files[0])
       };
-     
-//      console.log("final list",list)
-// console.log('grpuame',groupName,groupDescription)  
+      
 return (
         <div className = "home_main">
         <div>
@@ -128,7 +157,16 @@ return (
   <p><AddPhotoAlternateIcon/> Group Logo</p> 
             </label>
   </div>
+  <div class="box">
+  <select onChange= {(e)=> sortType(e,data)}>
+  <option>Sort</option> 
+  <option>A-Z</option>
+    <option>Z-A</option>
+  </select>
+</div>
         </div>
+
+        
     </div>
 
     <div className = "group_text">
@@ -142,6 +180,7 @@ return (
 
      <input placeholder = "Group Description" onChange={(e)=> SetGroupDescription(e.target.value)} type = "text"/>
     </div>
+    
     </div>
         </div>
 
@@ -176,22 +215,11 @@ return (
 
         </div>
         <div className = "button_section">
-        <Button   text = {"Create"} color = {"blue"} onClick = {saveGroup}/>
-        <Button text = {"Remove"} color = {"red"} onClick = {abort}/>     
+        <Button   text = {"Create"} color = {"rgb(58, 39, 221)"} onClick = {saveGroup}/>
+        <Button text = {"Remove"} color = {"rgb(221, 39, 57)"} onClick = {abort}/>     
         </div>
         </div>
     )
 }
 
 export default Home
-
-
-
-// <div className = "button_section">
-// <div className = "button">
-// <Button  text = {"Create"} color = {"blue"} onClick = {saveGroup}/>
-// </div>
-// <div className = "button">
-// <Button text = {"Remove"} color = {"red"} onClick = {abort}/>
-// </div>
-

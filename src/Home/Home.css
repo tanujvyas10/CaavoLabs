@@ -12,13 +12,18 @@
     height: 150px;
     width: 150px;
     border-radius: 10px;
-    
+   
   }
 
   .photo_uploading{
     border-radius: 20px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+   display: flex;
+  }
+
+  .box{
+    flex:1;
   }
   .heading{
     text-align: center;
@@ -52,7 +57,7 @@
     margin-top: .2rem;
   }
   .image-upload{
-
+flex: 1;
     color: white;
     border-radius: 10px;
     text-align: center;
@@ -115,6 +120,7 @@
 
 @media screen and (max-width: 768px) {
 
+  
   .home_group_creation{
     flex-direction: column;   
    }
@@ -129,7 +135,8 @@
  }
  .photo_uploading{
    flex:1;
-   margin-bottom: 50px;
+
+   margin-bottom: 100px;
  }
   
     .user_section {
@@ -156,3 +163,37 @@
 
   }
   
+
+
+
+
+
+
+  
+  .box {
+   flex:1;
+  border-radius: 10px;
+  border: 2.5px solid rgb(255, 255, 255);
+  }
+  
+  .box select {
+    background-color: rgb(22, 21, 21);
+    color: white;
+    padding: 12px;
+    width: 120px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+
+  
+  .box select option {
+    padding: 30px;
+    width: 200px;
+  }
+
+
+
+
+
