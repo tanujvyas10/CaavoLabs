@@ -17,7 +17,7 @@ This is a pseudo Front End Application which allows us to create a UserGroup by 
 * Now Enter ```npm start``` in the terminal
 
 # Demo
-![caavolabs](https://user-images.githubusercontent.com/48439116/102009972-0cc08e00-3d61-11eb-8844-bd07dfc43b80.gif)
+![caavolabs (1)](https://user-images.githubusercontent.com/48439116/102014124-63869180-3d7a-11eb-88f1-64ee7aab8ef9.gif)
 
 
 # Snapshots
