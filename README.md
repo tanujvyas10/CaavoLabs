@@ -31,6 +31,13 @@ This is a pseudo Front End Application which allows us to create a UserGroup by 
 ![image](https://user-images.githubusercontent.com/48439116/102009509-d5041700-3d5d-11eb-83e3-f23203c3042b.png)
 ### Notification when user donot select any user and try to create group
 ![image](https://user-images.githubusercontent.com/48439116/102010113-f535d500-3d61-11eb-934c-8c07330e76dd.png)
+### Notification when group description is empty
+![image](https://user-images.githubusercontent.com/48439116/102010244-e3086680-3d62-11eb-9df7-3541d251e3a8.png)
+
+### Notification when group name is empty
+![image](https://user-images.githubusercontent.com/48439116/102010264-10edab00-3d63-11eb-98d2-2574299b09c4.png)
+
+
 ### Group Logo Addition feature
 ![image](https://user-images.githubusercontent.com/48439116/102009535-07ae0f80-3d5e-11eb-89b1-5d8895532820.png)
 
