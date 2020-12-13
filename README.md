@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# About the project
+This is a pseudo Front End Application which allows us to create a UserGroup by selecting the members for the group from a list of users
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Tech Stack used
 
-In the project directory, you can run:
+* Reactjs
+* Material-ui Icons
+* CSS
+* [DummyAPI.IO](https://dummyapi.io/)
+* [SweetAlert](https://sweetalert.js.org/guides/)
 
-### `yarn start`
+# How to start
+* Enter ```git clone https://github.com/tanujvyas10/CaavoLabs.git``` in your terminal
+* Open the CaavoLabs folder after cloning is done.
+* Now Enter ```npm install``` in the terminal
+* Now Enter ```npm start``` in the terminal
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Demo
+![caavolabs](https://user-images.githubusercontent.com/48439116/102009972-0cc08e00-3d61-11eb-8844-bd07dfc43b80.gif)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+# Snapshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/48439116/102009401-2f50a800-3d5d-11eb-9b5f-554b2b18d562.png)
+![image](https://user-images.githubusercontent.com/48439116/102009416-468f9580-3d5d-11eb-8c9a-673e51b521b6.png)
+![image](https://user-images.githubusercontent.com/48439116/102009427-5b6c2900-3d5d-11eb-8fd2-1b8d6e369553.png)
+### Notification on successful group creation
+![image](https://user-images.githubusercontent.com/48439116/102009488-be5dc000-3d5d-11eb-8432-0ce00f065923.png)
+### Notification when abort the group creation
+![image](https://user-images.githubusercontent.com/48439116/102009509-d5041700-3d5d-11eb-83e3-f23203c3042b.png)
+### Notification when user donot select any user and try to create group
+![image](https://user-images.githubusercontent.com/48439116/102010113-f535d500-3d61-11eb-934c-8c07330e76dd.png)
+### Notification when group description is empty
+![image](https://user-images.githubusercontent.com/48439116/102010244-e3086680-3d62-11eb-9df7-3541d251e3a8.png)
 
-### `yarn build`
+### Notification when group name is empty
+![image](https://user-images.githubusercontent.com/48439116/102010264-10edab00-3d63-11eb-98d2-2574299b09c4.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Group Logo Addition feature
+![image](https://user-images.githubusercontent.com/48439116/102009535-07ae0f80-3d5e-11eb-89b1-5d8895532820.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Ascending order
+![image](https://user-images.githubusercontent.com/48439116/102009576-59569a00-3d5e-11eb-93f2-5eecf8ef8f66.png)
 
-### `yarn eject`
+### Descending order
+![image](https://user-images.githubusercontent.com/48439116/102009586-67a4b600-3d5e-11eb-8380-e8e828ad6e9c.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Mobile View
+![image](https://user-images.githubusercontent.com/48439116/102009447-7dfe4200-3d5d-11eb-8c5c-05dc7bd812aa.png)
+![image](https://user-images.githubusercontent.com/48439116/102009461-92dad580-3d5d-11eb-802f-74a46fdbc87c.png)
+![image](https://user-images.githubusercontent.com/48439116/102009474-9f5f2e00-3d5d-11eb-9e4f-e827e0c5754e.png)
+![image](https://user-images.githubusercontent.com/48439116/102009550-23b1b100-3d5e-11eb-9e49-056ba8a958d0.png)
+![image](https://user-images.githubusercontent.com/48439116/102009522-ed743180-3d5d-11eb-9795-b04cd18c125c.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
