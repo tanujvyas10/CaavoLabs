@@ -56,8 +56,14 @@ const Home = () => {
       groupImage: groupImage,
       selectedUsers: list,
     };
-    swal("Group Created Successfully!", "", "success");
-    console.log("Group to be save is", groupToSave);
+
+    if(groupToSave.selectedUsers.length <1)
+    swal("You have not selected any member", "", "warning");
+    else{
+      swal("Group Created Successfully!", "", "success");
+      console.log("Group to be save is", groupToSave);
+    }
+
   };
   const removeSelectedUser = function (element, idx) {
     for (let i in list) {
@@ -142,7 +148,7 @@ const Home = () => {
         <div className="photo_uploading">
           <div className="photo_container">
             <img
-              className="photo-holder"
+              className="photo_holder"
               src={groupImage}
               alt=""
               id="img"
@@ -159,13 +165,13 @@ const Home = () => {
               }}
             />
             <div className="label">
-              <label className="image-upload" htmlFor="input">
+              <label className="photo_upload" htmlFor="input">
                 <p>
                   <AddPhotoAlternateIcon /> Group Logo
                 </p>
               </label>
             </div>
-            <div className="box">
+            <div className="sort_box">
               <select onChange={(e) => sortType(e, data)}>
                 <option>Sort</option>
                 <option>A-Z</option>

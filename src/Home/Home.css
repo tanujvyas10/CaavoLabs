@@ -37,7 +37,7 @@ img {
   border-radius: 16px;
 }
 
-.photo-holder {
+.photo_holder {
   margin: auto;
   width: 150px;
   height: 150px;
@@ -61,7 +61,7 @@ img {
   margin-top: .2rem;
 }
 
-.image-upload {
+.photo_upload {
   flex: 1;
   color: white;
   border-radius: 10px;
@@ -112,13 +112,13 @@ img {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.box {
+.sort_box {
   flex: 1;
   border-radius: 10px;
   border: 2.5px solid rgb(255, 255, 255);
 }
 
-.box select {
+.sort_box select {
   background-color: rgb(22, 21, 21);
   color: white;
   padding: 5px;
@@ -131,7 +131,7 @@ img {
 @media screen and (max-width: 768px) {
 
   
-  .box select {
+  .sort_box select {
     width: 60%;
   }
 
