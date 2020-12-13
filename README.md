@@ -25,6 +25,7 @@ This is a pseudo Front End Application which allows us to create a UserGroup by 
 ![image](https://user-images.githubusercontent.com/48439116/102009488-be5dc000-3d5d-11eb-8432-0ce00f065923.png)
 ### Notificatoin on abort the group creation
 ![image](https://user-images.githubusercontent.com/48439116/102009509-d5041700-3d5d-11eb-83e3-f23203c3042b.png)
+### Group Logo Addition feature
 ![image](https://user-images.githubusercontent.com/48439116/102009535-07ae0f80-3d5e-11eb-89b1-5d8895532820.png)
 
 ### Ascending order
