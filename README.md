@@ -11,10 +11,10 @@ This is a pseudo Front End Application which allows us to create a UserGroup by 
 * [SweetAlert](https://sweetalert.js.org/guides/)
 
 # How to start
-* git clone https://github.com/tanujvyas10/CaavoLabs.git
+* Enter ```git clone https://github.com/tanujvyas10/CaavoLabs.git``` in your terminal
 * Open the CaavoLabs folder after cloning is done.
-* Enter npm install in the terminal
-* Enter npm start in the terminal
+* Now Enter ```npm install``` in the terminal
+* Now Enter ```npm start``` in the terminal
 
 # Snapshots
 
