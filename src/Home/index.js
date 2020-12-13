@@ -57,8 +57,12 @@ const Home = () => {
       selectedUsers: list,
     };
 
-    if(groupToSave.selectedUsers.length <1)
+    if(groupToSave.selectedUsers.length <1 )
     swal("You have not selected any member", "", "warning");
+    else if(groupToSave.groupName.length <1 )
+    swal("Group name is empty", "", "warning");
+    else if(groupToSave.groupDescription.length <1 )
+    swal("Group Description is empty", "", "warning");
     else{
       swal("Group Created Successfully!", "", "success");
       console.log("Group to be save is", groupToSave);
