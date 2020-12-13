@@ -1,199 +1,178 @@
-.home_main{
-    color:rgb(243, 238, 238);
-    text-align: center;
-    margin: auto;
+.home_heading {
+  font-weight: 700;
+  font-size: 40px;
 }
 
-.home_group_creation
-{
-    display: flex;
+.home_main {
+  color: rgb(243, 238, 238);
+  text-align: center;
+  margin: auto;
 }
-  .photo_container{
-    height: 150px;
-    width: 150px;
-    border-radius: 10px;
-   
-  }
 
-  .photo_uploading{
-    border-radius: 20px;
-    margin: auto;
-    margin-bottom: 100px;
-   display: flex;
-  }
+.home_group_creation {
+  display: flex;
+}
 
-  .box{
-    flex:1;
-  }
-  .heading{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 1rem;
-    font-weight: bold;
-  
-  }
-  img{
-    border-radius: 16px;
-  }
-  .photo-holder{
-    margin: auto;
-    width: 150px;
-    height: 150px;
-    border: 3px black solid;
-    border-radius: 20px;
-    margin-top: 1rem;
-    
-  }
-  .img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
-  #input[type="file"] {
-      display: none;
-  }
-  .label{
-    width: 100%;
-    margin-top: .2rem;
-  }
-  .image-upload{
-flex: 1;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-  }
+.photo_container {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
 
+.photo_uploading {
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 120px;
+  display: flex;
+}
 
-  .group_text{
-    flex:0.7;
-    align-items: center;
-  }
+.heading {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+  font-weight: bold;
+}
 
+img {
+  border-radius: 16px;
+}
 
-.name_section input[type="text"],.description_section input[type="text"]
-{
-  border:0;
+.photo-holder {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 3px black solid;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#input[type="file"] {
+  display: none;
+}
+
+.label {
+  width: 100%;
+  margin-top: .2rem;
+}
+
+.image-upload {
+  flex: 1;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.group_text {
+  flex: 0.7;
+  align-items: center;
+}
+
+.name_section input[type="text"],.description_section input[type="text"] {
+  border: 0;
   font-size: 24px;
   background: none;
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2.5px solid rgb(255, 255, 255);
+  border: 1.7px solid rgb(232, 228, 228);
   padding: 14px 10px;
   width: 70%;
   outline: none;
   color: white;
   border-radius: 24px;
   transition: 0.25s;
-    
 }
-
 
 .name_section input, .description_section input {
-    background-color: rgb(22, 21, 21);
-    color:whitesmoke;
-    border:none;
-    width: 80%;
-    padding:10px;
-    outline-width: 0;
-    height: 20px;
+  background-color: rgb(22, 21, 21);
+  color: whitesmoke;
+  border: none;
+  width: 80%;
+  padding: 10px;
+  outline-width: 0;
+  height: 20px;
 }
-
 
 .button_section {
- display: flex;
- align-items: center;
- justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.user_section{
-    flex:1;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.user_section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-  .user_section{
-      grid-template-columns: repeat(4, 1fr);
-  }
 
+.box {
+  flex: 1;
+  border-radius: 10px;
+  border: 2.5px solid rgb(255, 255, 255);
+}
+
+.box select {
+  background-color: rgb(22, 21, 21);
+  color: white;
+  padding: 5px;
+  width: 90%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
 
 @media screen and (max-width: 768px) {
 
   
-  .home_group_creation{
-    flex-direction: column;   
-   }
-   input[type="text"]
-{
-   font-size:15px;
-   text-align: center;
-}
-   
- .group_text {
-   flex:1;
- }
- .photo_uploading{
-   flex:1;
-
-   margin-bottom: 100px;
- }
-  
-    .user_section {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    input[type="text"]
-    {
-        font-size:15px;
-        text-align: center;
-    }
+  .box select {
+    width: 60%;
   }
-  
-  @media screen and (max-width: 375px) {
+
+  .home_group_creation {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .group_text {
+    flex: 1;
+  }
+
+  .photo_uploading {
+    flex: 1;
+    margin-bottom: 100px;
+  }
+
+  .user_section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  input[type="text"] {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
   
  
-    .user_section {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    input[type="text"]
-    {
-        font-size:15px;
-        text-align: center;
-    }
-
-  }
-  
-
-
-
-
-
-
-  
-  .box {
-   flex:1;
-  border-radius: 10px;
-  border: 2.5px solid rgb(255, 255, 255);
-  }
-  
-  .box select {
-    background-color: rgb(22, 21, 21);
-    color: white;
-    padding: 12px;
-    width: 120px;
-    border: none;
-    font-size: 18px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    outline: none;
+  .user_section {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  
-  .box select option {
-    padding: 30px;
-    width: 200px;
+  input[type="text"] {
+    font-size: 15px;
+    text-align: center;
   }
-
-
-
-
-
+}
+  
