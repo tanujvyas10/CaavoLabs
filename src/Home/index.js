@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import { BASE_URL, API_ID } from "../Helper/utilities";
 import User from "./User";
@@ -22,7 +22,6 @@ const Home = () => {
     axios
       .get(`${BASE_URL}/user?limit=10`, { headers: { "app-id": API_ID } })
       .then(({ data }) => {
-        console.log(data.data);
         const temp = data.data;
 
         let arr = [];
@@ -31,10 +30,8 @@ const Home = () => {
           arr.push(user);
         });
 
-        console.log(data);
         setData(arr);
 
-        console.log("INtial data", data);
       })
 
       .catch(console.error)

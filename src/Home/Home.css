@@ -90,15 +90,6 @@ img {
   transition: 0.25s;
 }
 
-.name_section input, .description_section input {
-  background-color: rgb(22, 21, 21);
-  color: whitesmoke;
-  border: none;
-  width: 80%;
-  padding: 10px;
-  outline-width: 0;
-  height: 20px;
-}
 
 .button_section {
   display: flex;
